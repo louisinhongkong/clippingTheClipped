@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>test</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="function.js"></script>
+</head>
+<style type="text/css">
+img{border:1px dashed #ccc; margin 5px; height:300px; vertical-align: middle;}
+
+</style>
+<body>
+
+<img src="topshop_skirts1_clipped_rev_1.png"/> PNG with lots of transparent space around an object. <br/><br/>
+<img id="clipped" src=""/> Using canvas we can clip the transparent space away leaving only the desired object.
+
+
+<script type="text/javascript">
+	$(document).ready(function()
+	{
+		var image = new Image();                               
+		image.src = 'topshop_skirts1_clipped_rev_1.png';
+		image.onload=function(){loadCanvas(image);}
+	});
+</script>
+
+
+
+</body>
+</html>
+
